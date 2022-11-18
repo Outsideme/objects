@@ -1,1 +1,54 @@
 
+
+.accor {
+	&:first-child {
+		margin-top: rem(20);
+	}
+
+	font-size: rem(14);
+	font-weight: 700;
+	color: #fff;
+
+	h2 {
+		padding-bottom: rem(8);
+	}
+}
+
+.menu-link-mob {
+
+	a {
+		&:hover {
+			font-weight: 700;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.4)
+		}
+
+		font-size: rem(12);
+		font-weight: 400;
+	}
+
+	margin-top: rem(8);
+	margin-bottom: rem(8);
+	margin-left: rem(20);
+}
+
+.accor-content.open-accor {
+	visibility: visible;
+	opacity: 1;
+	height: auto;
+	transition: 1s;
+}
+
+#arrow.open-accor {
+	transform: rotate(-90deg);
+	transition: .3s;
+
+}
+
+.accor-content {
+	transition: 1s;
+	overflow: hidden;
+	visibility: hidden;
+	opacity: 0;
+	height: 0;
+
+}
